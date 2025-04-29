@@ -338,23 +338,51 @@
   
   .transmision-container {
     position: absolute;
-    top: 20%; /* Ajusta si es necesario */
-    left: 0,1%; /* Cerca del datalogger */
-    width: 200px;
-    height: 100px;
-    pointer-events: none; /* Para que no interfiera con el mouse */
+    top: 25%;
+    left: 10%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    pointer-events: none;
   }
   
-  .linea-dga,
-  .linea-ikolu {
-    width: 80px;
-    height: 2px;
-    background-color: #1f5361;
-    position: absolute;
-    top: 20px;
-    left: 0;
-    animation: blink-line 1s infinite;
+  .transmision-row {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
   }
+
+  .linea {
+  width: 90px; /* ajusta según distancia entre datalogger y texto */
+  height: 2px;
+  background-color: #1f5361;
+  position: relative;
+  margin-right: 8px;
+}
+  
+.linea::after {
+  content: ')))';
+  position: absolute;
+  right: -15px;
+  top: -9px;
+  color: #1f5361;
+  font-weight: bold;
+  animation: blink-arrow 1s infinite;
+}
+
+/* Animación de flecha */
+@keyframes blink-arrow {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+  .linea-dga,
+.linea-ikolu {
+  width: 80px;
+  height: 2px;
+  background-color: #1f5361;
+  animation: blink-line 1s infinite;
+  margin-right: 8px;
+}
   
   .linea-ikolu {
     top: 50px;
@@ -366,14 +394,12 @@
   }
   
   .plataforma {
-    position: absolute;
-    left: 90px;
-    padding: 2px 6px;
     background-color: #3e4e57;
     color: white;
+    padding: 2px 6px;
     border-radius: 5px;
     font-size: 0.8em;
-    text-align: center;
+    white-space: nowrap;
   }
   
   .plataforma.dga {
@@ -382,6 +408,12 @@
   
   .plataforma.ikolu {
     top: 42px;
+  }
+
+  .logo-plataforma {
+    width: 50px;    /* ajusta el tamaño según necesites */
+    height: auto;
+    margin-left: 10px;
   }
 
 

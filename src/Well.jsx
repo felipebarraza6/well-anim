@@ -111,12 +111,16 @@ const Well = ( ) => {
           <div className="pata-izquierda"></div>
           <div className="pata-derecha"></div>
         </div>
-        <div className="transmision-container">
-         <div className="linea-dga" />
-         <div className="linea-ikolu" />
-        <div className="plataforma dga">DGA</div>
-         <div className="plataforma ikolu">IKOLU</div>
-        </div>
+        <div class="transmision-container">
+  <div class="transmision-row">
+  <div class="plataforma">DGA</div>
+    <div class="linea"></div>
+  </div>
+  <div class="transmision-row">
+    <div class="plataforma">IKOLU</div>
+    <div class="linea"></div>
+  </div>
+</div>
         <div className="caudalimetro">
           <Text style={{ textAlign: "center", color: "white" }}>0.0 lt/s</Text>
         </div>
