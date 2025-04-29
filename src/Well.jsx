@@ -117,7 +117,7 @@ const Well = ( ) => {
     <div class="linea"></div>
   </div>
   <div class="transmision-row">
-  <img src="src/assets/images/logogreen.png" alt="IKOLU" class="logo-plataforma" />
+  <img src="src/assets/images/huella_en_circulo.png" alt="IKOLU" class="logo-plataforma" />
     <div class="linea"></div>
   </div>
 </div>
