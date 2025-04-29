@@ -38,11 +38,7 @@ const Well = ( ) => {
   // Variables a utilizar
 
   const profundidad = 0.0
-  const posSensor = 0.0
-  const nivel = 0.0
   const nivelFreatico = 0.0
-  const caudal = 0.0
-  const total = 0.0
 
   const [bubbles, setBubbles] = useState([]);
   const [tubeBubbles, setTubeBubbles] = useState([]);
@@ -115,7 +111,12 @@ const Well = ( ) => {
           <div className="pata-izquierda"></div>
           <div className="pata-derecha"></div>
         </div>
-
+        <div className="transmision-container">
+         <div className="linea-dga" />
+         <div className="linea-ikolu" />
+        <div className="plataforma dga">DGA</div>
+         <div className="plataforma ikolu">IKOLU</div>
+        </div>
         <div className="caudalimetro">
           <Text style={{ textAlign: "center", color: "white" }}>0.0 lt/s</Text>
         </div>
