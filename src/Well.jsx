@@ -113,11 +113,11 @@ const Well = ( ) => {
         </div>
         <div class="transmision-container">
   <div class="transmision-row">
-  <div class="plataforma">DGA</div>
+  <img src="src/assets/images/dga.jpg" alt="DGA" class="logo-plataforma" />
     <div class="linea"></div>
   </div>
   <div class="transmision-row">
-    <div class="plataforma">IKOLU</div>
+  <img src="src/assets/images/logogreen.png" alt="IKOLU" class="logo-plataforma" />
     <div class="linea"></div>
   </div>
 </div>
