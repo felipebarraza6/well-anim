@@ -1,5 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import DGALogo from '../assets/images/dganuevo.jpg'; // Importa la imagen de DGA
+import IKOLULogo from '../assets/images/huella_en_circulo.png'; // Importa la imagen de IKOLU
 
 function PozoDigital({ nivel }) {
   const porcentaje = Math.max(0, Math.min(nivel / 10 * 100, 100));
@@ -27,6 +29,11 @@ function PozoDigital({ nivel }) {
         <div className="absolute -top-8 left-1/2 -translate-x-1/2 bg-black text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition duration-300">
           Datalogger: recoge y transmite datos
         </div>
+        {/* Imagen de DGA */}
+        <div className="absolute top-[120%] left-1/2 -translate-x-1/2">
+          <img src={DGALogo} alt="Logo DGA" width="30" height="30" />
+        </div>
+
       </div>
 
       {/* Caudalímetro con tooltip embebido */}
@@ -34,6 +41,10 @@ function PozoDigital({ nivel }) {
         <div className="w-6 h-6 bg-gray-500 rounded-full"></div>
         <div className="absolute -top-8 left-1/2 -translate-x-1/2 bg-black text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition duration-300">
           Caudalímetro: mide el flujo de agua
+        </div>
+        {/* Imagen de IKOLU */}
+        <div className="absolute top-[120%] left-1/2 -translate-x-1/2">
+          <img src={IKOLULogo} alt="Logo IKOLU" width="30" height="30" />
         </div>
       </div>
     </div>
