@@ -6,7 +6,9 @@
   }
   
   .pozo {
-    position: relative;
+    --pozo-width: 270px;
+    --pozo-height: 500px;
+    position: relative;    
     width: 270px;
     height: 500px;
   }
@@ -16,14 +18,8 @@
     width: 120%;
     height: 80%;
     margin-top: 5px;
-    background-image: 
-      url('/home/user/well-anim/src/assets/images/image.jpg'),  /* Reemplaza por la ruta real */
-      linear-gradient(to bottom, #c397896a, #cc9b8b);
-    background-size: cover, cover;
-    background-repeat: repeat, no-repeat;
-    background-blend-mode: multiply;
-    overflow: hidden;
-    animation: movimiento-tierra 40s linear infinite;
+    background-image: url('/home/user/well-anim/src/assets/images/terreno1.png'), linear-gradient(to bottom, #a0522d, #deb887);
+    background-size: cover;
   }
     
   @keyframes movimiento-tierra {
