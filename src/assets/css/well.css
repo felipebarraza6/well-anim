@@ -6,8 +6,8 @@
   }
   
   .pozo {
-    --pozo-width: 270px;
-    --pozo-height: 500px;
+    --pozo-width: 300px;
+    --pozo-height: 550px;
     position: relative;    
     width: 270px;
     height: 500px;
@@ -17,10 +17,11 @@
     position: absolute;
     width: 120%;
     height: 80%;
-    margin-top: 5px;
-    background-image: url('/home/user/well-anim/src/assets/images/terreno1.png'), linear-gradient(to bottom, #a0522d, #deb887);
+    margin-top: 4px;
+    background: linear-gradient(to bottom, #a0522d, #deb887); /* Gradiente café claro con relieves */
     background-size: cover;
   }
+
     
   @keyframes movimiento-tierra {
     0% {
@@ -126,7 +127,7 @@
     position: absolute;
     top: 48%;
     width: 120%;
-    height: 10px;
+    height: 11px;
     background-color: #628157;
   }
   
