@@ -6,20 +6,26 @@
   }
   
   .pozo {
-    --pozo-width: 300px;
-    --pozo-height: 550px;
-    position: relative;    
+    margin: auto;
+    position: relative;
+    width: 300px;
     width: 270px;
     height: 500px;
   }
   
   .tierra {
     position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     width: 120%;
-    height: 80%;
-    margin-top: 4px;
-    background: linear-gradient(to bottom, #a0522d, #deb887); /* Gradiente café claro con relieves */
+    height: 100%;
+    background-image: url('../images/terreno1.png');
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center -27px; /* <- mueve la imagen hacia arriba */
+    z-index: -1; /* asegúrate que esté detrás del agua y otros elementos */
   }
 
     
@@ -31,6 +37,7 @@
       background-position: 200% 100%;
     }
   }
+  
   .tierra .circulo {
     position: absolute;  
     width: 6px;
@@ -75,7 +82,7 @@
     opacity: 0.7;
     animation: flotacion-horizontal 10s infinite linear; /* Más lento */
   }
-  
+
   .burbuja-tubo {
     position: absolute;
     width: 4px;
